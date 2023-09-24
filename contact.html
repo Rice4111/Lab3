@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Map</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+			* {
+                            margin: 0;
+                            padding: 0;
+			}
+
+			.clearfix:after {
+                            content: "";
+                            display: block;
+                            height: 0;
+                            visibility: hidden;
+                            clear: both;
+			}
+
+                        
+                        .link {
+                            position: fixed; 
+                            top: 0; 
+                            left: 25%; 
+                            margin: 0; 
+			}
+
+			.link a {
+                            display: block;
+                            float: left;
+                            width: 50px;
+                            margin: 3px 3px 0 0;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 25px;
+                            text-decoration: none;
+                            font-size: 10px;
+                        }
+                        .link a:hover {
+                        background-color: rgba(0, 201, 243, 0.35);
+                        } 
+
+                        .bottom {
+                            position: fixed;
+                            bottom: 50px;
+                            right: 0;
+                            color: #fff;
+                            padding: 10px;
+                            font-size: 35px;
+                        }    
+                        .icon {
+                            position: absolute;
+                            top: 15px;
+                            right: 15px;
+                            margin-right: 35px;
+                            color: white;
+                            font-size: 25px;
+                        }
+        </style>
+    </head>
+    <body>
+        	<div class="row">
+            <div class="col-md-12" style="background-color: navy;height:80px;">
+                <div class='link'>
+                    <a href='./index.html'><span>HOME</span></a>
+                    <a href='./photos.html'><span>PHOTOS</span></a>
+                    <a href='./bio.html'><span>BIO</span></a>
+                    <a href='https://www.instagram.com/ilovericeee41/'><span>BLOG</span></a>
+                    <a href='./contact.html'><span>CONTACT</span></a>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>
